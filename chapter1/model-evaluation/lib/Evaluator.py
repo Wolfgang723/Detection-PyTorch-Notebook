@@ -41,7 +41,7 @@ class Evaluator:
                     if iouMax >= cfg['iouThreshold']:
                         if gt_class[dects[d][-1]][jmax][4] == 0:
                             TP[d] = 1
-                            gt_class[dects[d][-1]][jmax][4] == 1
+                            gt_class[dects[d][-1]][jmax][4] = 1
 
                         else:
                             FP[d] = 1
